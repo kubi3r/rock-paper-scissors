@@ -48,4 +48,15 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-playRound(getHumanChoice(), getComputerChoice())
+let roundsToPlay = 5
+
+while (roundsToPlay > 0) {
+    playRound(getHumanChoice(), getComputerChoice())
+    roundsToPlay--
+}
+
+if (playerScore > computerScore) {
+    console.log(`Player won! Scores: Player - ${playerScore} Computer - ${computerScore}`)
+} else {
+    console.log(`Computer won! Scores: Player - ${playerScore} Computer - ${computerScore}`)
+}
