@@ -48,12 +48,6 @@ function playRound(humanChoice, computerChoice) {
     }
 }
 
-let roundsToPlay = 5
-
-while (roundsToPlay > 0) {
-    playRound(getHumanChoice(), getComputerChoice())
-    roundsToPlay--
-}
 
 if (playerScore > computerScore) {
     console.log(`Player won! Scores: Player - ${playerScore} Computer - ${computerScore}`)
