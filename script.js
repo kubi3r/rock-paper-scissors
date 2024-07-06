@@ -49,8 +49,3 @@ function playRound(humanChoice, computerChoice) {
 }
 
 
-if (playerScore > computerScore) {
-    console.log(`Player won! Scores: Player - ${playerScore} Computer - ${computerScore}`)
-} else {
-    console.log(`Computer won! Scores: Player - ${playerScore} Computer - ${computerScore}`)
-}
