@@ -47,6 +47,27 @@ function playRound(humanChoice, computerChoice) {
     } else {
         results.textContent = 'Tie!'
     }
+    checkForWinner(playerScore, computerScore)
+}
+
+function checkForWinner(pScore, cScore) {
+    const score = document.querySelector('#score')
+
+    score.textContent = `Score: ${pScore} - ${cScore}`
+
+    if (playerScore >= 5) {
+        score.textContent += ' Player wins the game!'
+
+        // Change the global variables
+        playerScore = 0
+        computerScore = 0
+    } else if (computerScore >= 5) {
+        score.textContent += ' Computer wins the game!'
+
+        // Change the global variables
+        playerScore = 0
+        computerScore = 0
+    }
 }
 
 const rock = document.querySelector('#rock')
