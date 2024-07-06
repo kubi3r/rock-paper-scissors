@@ -44,7 +44,6 @@ function playRound(humanChoice, computerChoice) {
         playerScore++
     } else {
         console.log('Tie, play again.')
-        playRound(getHumanChoice(), getComputerChoice())
     }
 }
 
